@@ -1,32 +1,33 @@
-import styles from "./navbar.module.css";
+import Link from "next/link";
+
 
 export default function NavBar() {
   return (
-    <nav className={styles.navbar}>
+    <nav className="navbar">
      <ul> 
       <li>
       <h1>Daniel Ross</h1>
       </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="#about" scroll={false}>About</Link>
         </li>
         <li>
-          <a href="/projects">Projects</a>
+          <Link href="#projects" scroll={false}>Projects</Link>
         </li>
         <li>
-          <a href="/whyyou">Why Your Company?</a>
+          <Link href="#whyyou" scroll={false}>Why Your Company?</Link>
         </li>
         <li>
-          <a href="/whyme">Why Hire Me?</a>
+          <Link href="#whyme" scroll={false}>Why Hire Me?</Link>
         </li>
         <li>
-          <a href="/skills">Skills</a>
+          <Link href="#skills" scroll={false}>Skills</Link>
         </li>
         <li>
-          <a href="/reference">Reference</a>
+          <Link href="#references" scroll={false}>References</Link>
         </li>
         <li>
-          <a href="/resume">Resume</a>
+          <Link href="#resume" scroll={false}>Resume</Link>
         </li>
       </ul>
     </nav>
